@@ -1,0 +1,93 @@
+@import "../../vars.css";
+
+.container {
+    position: relative;
+    margin: 0px 10%;
+    padding: 73px;
+    margin-top: 129px;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.aboutTitle {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.aboutImg {
+    width: 50%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px
+}
+
+.aboutItems {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--color-text);
+}
+
+.aboutItem {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border-radius: 20px;
+    transition: 0.4s;
+    background: linear-gradient(90deg,
+            rgba(165, 215, 232, 0.42) -60.08%,
+            rgba(255, 255, 255, 0.00) 66.02%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.aboutItem:hover {
+    background-size: 100% 100%;
+}
+
+.cardContent {
+    padding: 15px;
+}
+
+.cardTitle {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cardDescription {
+
+    font-size: 25px;
+}
+
+@media screen and (max-width:830px) {
+    .container {
+        background-color: transparent;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .aboutImg {
+        display: none;
+
+    }
+
+    .aboutTitle {
+        margin-bottom: 29px;
+    }
+
+    .aboutItem {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

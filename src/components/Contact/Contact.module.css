@@ -1,0 +1,66 @@
+@import url('../../vars.css');
+
+.container {
+    background-color: #19376D;
+    margin-top: 100px;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text);
+    width: 100vw;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSide h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.leftSide p {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.rightSide {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px
+}
+
+.rightSide li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.rightSide a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSide {
+        text-align: center;
+    }
+
+    .rightSide {
+        text-align: center;
+    }
+
+}
